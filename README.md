@@ -18,11 +18,11 @@ This repository explores data-reconstruction attacks and the efficacy of Differe
 Below are key figures illustrating our findings:
 
 ### Figure 1: Privacy-Utility Tradeoff for FER2013
-![DP-SGD Tradeoff](/home/da23c014/PrivacyAI/CourseProject/dp-sgd.png)
+![DP-SGD Tradeoff](dp-sgd.png)
 *Test accuracy versus privacy parameter \(\epsilon\) on FER2013. The highest accuracy under DP constraints (47.5%) is achieved with a batch size of 256 and weight standardization.*
 
 ### Figure 2: Data-Reconstruction Attack Results
-![Reconstructed Images](/home/da23c014/PrivacyAI/CourseProject/rec_1.png)
+![Reconstructed Images](rec_1.png)
 *Top: Original training images from FER2013; Bottom: Reconstructed images using data-reconstruction attacks. SSIM scores indicate high visual similarity.*
 
 ## Repository Structure

@@ -1,0 +1,69 @@
+{
+    "config": {
+        "method": "random",
+        "metric": {
+            "goal": "minimize",
+            "name": "extraction score"
+        },
+        "parameters": {
+            "data_per_class_train": {
+                "value": 250
+            },
+            "extraction_data_amount_per_class": {
+                "value": 500
+            },
+            "extraction_epochs": {
+                "value": 50000
+            },
+            "extraction_evaluate_rate": {
+                "value": 1000
+            },
+            "extraction_init_scale": {
+                "distribution": "log_uniform_values",
+                "max": 0.1,
+                "min": "1e-06"
+            },
+            "extraction_lr": {
+                "distribution": "log_uniform_values",
+                "max": 1,
+                "min": "1e-05"
+            },
+            "extraction_min_lambda": {
+                "distribution": "uniform",
+                "max": 0.5,
+                "min": 0.01
+            },
+            "extraction_model_relu_alpha": {
+                "distribution": "uniform",
+                "max": 500,
+                "min": 10
+            },
+            "model_use_bias":{
+                "value": true
+            },
+            "model_hidden_list": {
+                "value": "[1000,500,100,50]"
+            },
+            "model_init_list": {
+                "value": "[0.0001,0.0001,0.001,0.001]"
+            },
+            "pretrained_model_path": {
+                "value": "weights-fer_03_d250_fer_03_2.pth"
+            },
+            "problem": {
+                "value": "fer_03"
+            },
+            "run_mode": {
+                "value": "reconstruct"
+            },
+            "wandb_active": {
+                "value": true
+            }
+        },
+        "program": "Main.py"
+    },
+    "full_name": "fer_03_t1",
+    "id": "t1",
+    "pretrained_model_path": "weights-fer_03_d250_fer_03_2.pth",
+    "problem": "fer_03"
+}
